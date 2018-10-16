@@ -47,6 +47,7 @@ void APrototypeCharacter::MoveRight(float Value)
 			SetCharacterYaw(-180.0f);
 		}
 	}
+	AnimationUpdate();
 }
 
 void APrototypeCharacter::SetCharacterYaw(float Value)
@@ -57,5 +58,6 @@ void APrototypeCharacter::SetCharacterYaw(float Value)
 void APrototypeCharacter::Jump()
 {
 	Super::Jump();
+	AnimationUpdate();
 }
 

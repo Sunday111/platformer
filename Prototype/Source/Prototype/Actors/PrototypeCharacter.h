@@ -30,13 +30,14 @@ protected:
 
 	void Jump() override;
 
-	void SetCharacterYaw(float Value)
+	void SetCharacterYaw(float Value);
 
 public:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
+	UFUNCTION(BlueprintImplementableEvent, Category = "Animation")
+	void AnimationUpdate();
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
